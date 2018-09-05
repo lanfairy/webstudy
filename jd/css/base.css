@@ -15,9 +15,9 @@
 li {
 	list-style: none;
 }
-ul {
-	margin: 0;
-	padding: 0;
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul {
+	margin:0;
+	padding:0
 }
 input, button {
 	padding: 0;
@@ -43,6 +43,17 @@ body {
         line-height: 1.5;
     color: #666;*/
 
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
 }
 /* 京东 顶部 start */
 .J_event {
@@ -153,7 +164,7 @@ body {
 }
 .inner {
 	height: 140px;
-	background-color: pink;
+	/*background-color: pink;*/
 	position: relative;
 }
 /*logo 部分*/
@@ -277,8 +288,130 @@ body {
 	right: 0px;
 	bottom: 10px;
 }
+/*navitems*/
+.navitems {
+	position: absolute;
+	left: 200px;
+	bottom: 0px;
+}
+.navitems ul {
+	float: left;
+}
+.navitems ul li {
+	float: left;
+	margin-left: 30px;
+}
+.navitems li a {
+	font-size: 16px;
+	color: #555a5f;
+	font-weight: 700;
+	height: 40px;
+	line-height: 40px;
+	/*background-color: #fff;*/
+	display: block;
+}
+.navitems li a:hover {
+	color: #f10215;
+}
+.navitems .spacer {
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: -10px;
+}
 /*header 部分结束*/
 
+/*footer 开始*/
+.footer {
+	height: 560px;
+	background-color: #eaeaea;
+}
+.footer-service {
+	height: 100px;
+	border-bottom: 1px solid #dedede;
+}
+.footer-service-inner {
+	/*background-color: #fff;*/
+	padding: 30px 0;
+}
+.footer-service-inner li {
+	float: left;
+	width: 297px;
+	height: 42px;
+}
+.service_unit {
+	width: 225px;
+	height: 42px;
+	margin: 0 auto;
+	position: relative;
+}
 
+.service_unit h5 {
+	width: 36px;
+	height: 42px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(../images/ico_service.png) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.service_unit p {
+	line-height: 42px;
+	margin-left: 45px;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+ /*帮助模块 */
+.help {
+	height: 180px;
+	padding-top: 20px;
+	/*background-color: pink;*/
+}
+.help dl {
+	float: left;
+	width: 195px;
+}
+.help dt {
+	font-size: 14px;
+	font-weight: 700;
+	color: #666;
+	height: 30px;
+}
+.help dd {
+	height: 22px;
+}
+.help dd a {
+	color: #727272;
+	font-size: 12px;
+}
+.help .cover {
+    float: right;
+    width: 207px;
+    height: 150px;
+    background: url(../images/ico_footer.png) no-repeat;
+}
+.cover dt {
+	text-align: center;
+}
+.cover .info {
+	width: 175px;
+	height: 50px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #727272;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.more {
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+.more a:hover {
+	color: #f10215;
+}
+/*footer 结束*/
 
 
