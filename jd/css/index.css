@@ -1,1 +1,272 @@
 /*首页 css*/
+.jd {
+	height: 480px;
+	/*background-color: pink;*/
+	position: relative;
+}
+.jd-inner {
+	/*background-color: skyblue;*/
+	height: 480px;
+	position: relative;
+	z-index: 1;
+}
+.ad {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/bg.png) no-repeat top center;
+	height: 480px;
+	width: 100%;
+	z-index: 0;
+}
+.ad a {
+	display: block;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.jd-clo1 {
+	width: 190px;
+	height: 465px;
+	background-color: #6e6568;
+	float: left;
+	padding-top: 15px;
+}
+.jd-clo1 li {
+	height: 28px;
+	line-height: 28px;
+	padding-left: 10px;
+}
+.jd-clo1 li:hover {
+	background-color: #999395;
+}
+.jd-clo1 li a {
+	font-size: 14px;
+	color: #fff;
+}
+.jd-clo1 li a:hover {
+	color: #f10215;
+}
+.jd-clo1 li span {
+	color: #fff;
+	font-size: 12px;
+}
+.jd-clo2 {
+	width: 790px;
+	height: 480px;
+	/*background-color: purple;*/
+	margin: 0 10px;
+	float: left;
+}
+.jd-clo2-hd {
+	width: 790px;
+	height: 340px;
+	background-color: #fff;
+	margin-bottom: 10px;
+	position: relative;
+}
+.jd-clo2-bd div {
+	width: 390px;
+	height: 130px;
+	float: left;
+}
+.jd-clo2-bd div img {
+	width: 100%;
+	cursor: pointer;
+}
+.arrow-l,
+.arrow-r {
+	color: #fff;
+	width: 24px;
+	height: 60px;
+	line-height: 60px;
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	background-color: rgba(0,0,0,0.3);
+	font-family: "icomoon";
+	font-size: 30px;
+	
+	font-style: normal;
+}
+.arrow-l {
+	left: 0;
+	text-align: right;
+	padding-left: 6px;
+}
+.arrow-r {
+	right: 0;
+	padding-right: 6px;
+	text-align: left;
+}
+
+
+.jd-clo2-hd ol {
+	width: 180px;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 20px;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 10px;
+}
+.jd-clo2-hd ol li {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #fff;
+	float: left;
+	margin: 4px 5px;
+	cursor: pointer;
+}
+
+ .jd-clo2-hd ol li.current {
+ 	background-color: #f10215;
+ }
+
+
+.jd-clo3 {
+	width: 190px;
+	height: 480px;
+	/*background-color: pink;*/
+	float: right;
+}
+.jd-clo3 a {
+    font-size: 12px;
+    color: #747474;
+}
+.user {
+	height: 95px;
+	background-color: pink;
+	padding: 20px 15px 0px;
+}
+.user-info {
+	height: 40px;
+	font-size: 12px;
+	color: #747474;
+	line-height: 22px;
+	padding-left: 54px;
+	position: relative;
+}
+.user-info a {
+	font-size: 12px;
+	color: #747474;
+
+}
+.user-info a:hover {
+	color: #f10215;
+}
+
+.info-img {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.info-img img {
+	width: 100%;
+	height: auto;
+}
+
+.user-profit {
+	height: 24px;
+	margin-top: 14px;
+}
+.user-profit a {
+    width: 70px;
+    height: 20px;
+    border: 2px solid #f10215;
+    display: inline-block;
+    font-size: 12px;
+    color: #f10215;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 4px;
+}
+
+.news {
+	height: 149px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 15px 0;
+}
+.tab-hd {
+	padding: 3px 0px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.tab-hd a {
+	margin: 0 4px;
+}
+.cuxiao {
+	padding-right: 10px;
+	border-right: 1px solid #ccc;
+}
+.news .more1 {
+	position: absolute;
+	top: 6px;
+	right: 0px;
+}
+.line {
+	width: 28px;
+	height: 2px;
+	background-color: #f10215;
+	left: 0px;
+	bottom: -1px;
+	position: absolute;
+}
+
+.tab-hb {
+	margin-top: 10px;
+	/*height: 92px;*/
+}
+
+.tab-hb li {
+	height: 23px;
+	line-height: 23px;
+}
+
+
+
+.jd-service {
+	width: 190px;
+	height: 209px;
+	/*background-color: pink;*/
+	overflow: hidden;
+}
+.jd-service ul {
+	width: 195px;
+}
+.jd-service li {
+	width: 47px;
+	height: 69px;
+	float: left;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.jd-service li a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.jd-service a i {
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin: 15px auto 8px;
+	background: url(../images/sprite_fs@1x.png) no-repeat;	
+}
+.jd-service a p {
+	text-align: center;
+}
+
+
+
+

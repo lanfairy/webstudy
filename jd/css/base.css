@@ -4,7 +4,7 @@
 	margin: auto;
 }
 .fr {
-	float: right;
+	float: right!important;
 }
 .fl {
 	float: left;
@@ -29,11 +29,11 @@ a {
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?qniu9w');
-  src:  url('../fonts/icomoon.eot?qniu9w#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?qniu9w') format('truetype'),
-    url('../fonts/icomoon.woff?qniu9w') format('woff'),
-    url('../fonts/icomoon.svg?qniu9w#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?t6fml1');
+  src:  url('../fonts/icomoon.eot?t6fml1#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?t6fml1') format('truetype'),
+    url('../fonts/icomoon.woff?t6fml1') format('woff'),
+    url('../fonts/icomoon.svg?t6fml1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -310,7 +310,8 @@ body {
 	/*background-color: #fff;*/
 	display: block;
 }
-.navitems li a:hover {
+.navitems li a:hover,
+.links a:hover {
 	color: #f10215;
 }
 .navitems .spacer {
@@ -411,6 +412,63 @@ body {
 }
 .more a:hover {
 	color: #f10215;
+}
+
+/*版权模块*/
+.copyright {
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
+}
+.links {
+	text-align: center;
+}
+.links a {
+	font-size: 12px;
+	color: #727272;
+}
+
+.links span {
+	font-size: 12px;
+	color: #d4cdcd;
+	margin: 0 6px;
+}
+.c-info p a,
+.c-info {
+	font-size: 12px;
+	color: #9E9E9B;
+}
+.c-info p a:hover {
+	color: #f10215;
+}
+.c-info {
+	text-align: center;
+	line-height: 20px;
+	margin-top: 10px;
+}
+.tupian {
+	margin-top: 10px;
+	text-align: center;
+}
+.tupian a {
+	width: 103px;
+	height: 32px;
+	display: inline-block;
+	background: url(../images/ico_footer.png) no-repeat 0 -151px;
+}
+a.tu-two {
+    background-position: -104px -151px;
+}
+a.tu-thress {
+	background-position: 0 -183px;
+}
+a.tu-four {
+	background-position: -104px -183px;
+}
+a.tu-five {
+	background-position: 0 -215px;
+}
+a.tu-six {
+	background-position: -104px -215px;
 }
 /*footer 结束*/
 
