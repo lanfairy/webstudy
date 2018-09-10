@@ -1,0 +1,100 @@
+body {
+	background-color: #f3f5f7;
+
+}
+header {
+	width: 1300px;
+	height: 100px;
+	background-color: pink;
+	margin: auto;
+	padding-top: 30px;
+}
+.logo {
+	width: 195px;
+	height: 42px;
+	float: left;
+	/*background-color: #fff;*/
+}
+.logo a {
+	display: block;
+	width: 195px;
+	height: 42px;
+	background: url(../images/logo.png) no-repeat;
+	text-indent: -999px;
+	overflow: hidden;
+}
+/*导航栏*/
+nav {
+	float: left;
+	margin-left: 20px;
+}
+nav ul li {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 25px;
+}
+nav li a {
+	display: block;
+	height: 40px;
+	padding: 0 10px;
+	font-size: 18px;
+}
+nav li a:hover {
+	color: #00a4ff;
+	border-bottom: 2px solid #00a4ff;
+}
+/*搜索框*/
+.search {
+	width: 410px;
+	height: 40px;
+	float: left;
+	background-color: purple;
+	margin-left: 50px;
+}
+
+.search input {
+	width: 361px;
+	height: 40px;
+	outline: none;
+	border: 1px solid #00a4ff;
+	padding-left: 10px;
+}
+
+.search button {
+
+	width: 49px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	background: url(../images/fa-search.png) no-repeat;
+	vertical-align: top;
+}
+
+/*个人中心*/
+.person {
+	width: 280px;
+	height: 40px;
+	float: right;
+
+}
+
+.person dt, .person dd {
+	float: left;
+}
+.person s {
+	padding: 0 10px;
+	position: relative;
+}
+.person s::before {
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	right: 4px;
+} 
+
