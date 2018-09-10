@@ -1,0 +1,37 @@
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul {
+	margin:0;
+	padding:0
+	box-sizing: border-box;
+}
+input, button {
+	padding: 0;
+	border: 0;
+}
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #f3f5f7;
+}
+
+header {
+	width: 1300px;
+	height: 100px;
+	background-color: pink;
+	margin: auto;
+	padding-top: 30px;
+}
+.logo {
+	width: 195px;
+	height: 42px;
+	/*background-color: #fff;*/
+}
+.logo a {
+	display: block;
+	width: 195px;
+	height: 42px;
+	background: url(../images/logo.png) no-repeat;
+	text-indent: -999px;
+	overflow: hidden;
+}

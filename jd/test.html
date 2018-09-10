@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+		    background-color: #ccc;
+		}
+		div {
+		    color: #ccc;
+			font: 700 80px "微软雅⿊黑"; }
+		div:first-child {
+		/* text-shadow: ⽔水平位置 垂直位置 模糊距离 阴影颜⾊色; */ 
+			text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+		}
+		div:last-child {
+		/* text-shadow: ⽔水平位置 垂直位置 模糊距离 阴影颜⾊色; */
+		    text-shadow: -1px -1px 1px #000, 1px 1px 1px #fff;
+		}
+		/*p::selection {
+			
+			background-color: #f10215;
+		}
+		p::first-letter {
+			color: red;
+			font-size: 30px;
+		}
+		p::before {
+			content: "before--";
+		}
+		p::after {
+			content: "---after";
+		}
+		.list li:first-child {
+			color: pink;
+		}
+		li:last-child {
+			color: purple;
+		}
+		li:nth-child(2) {
+			background-color: #fff;
+		}
+		div[class$=st] {
+			background-color: skyblue;
+		}
+*/
+	</style>
+</head>
+<body>
+	<!-- <div>
+		<p>4、E::before和E::after在E元素内部的开始位置和结束位创建⼀一个元素，该元素为⾏行行内元素，且必须要结合content属性使 ⽤用</p>
+	</div>	
+	<div class="list">
+		<ul>
+			<li>1n</li>
+			<li>2n</li>
+			<li>3n</li>
+			<li>4n</li>
+			<li>5n</li>
+		</ul>
+	</div> -->
+	<div>我是凸起的⽂文字</div>
+	<div>我是凹下的⽂文字</div>
+</body>
+</html>
