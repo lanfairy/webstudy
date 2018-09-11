@@ -151,3 +151,26 @@ nav li a:hover {
 	color: deepskyblue;
 }
 
+/*小圆点*/
+.circle {
+	width: 176px;
+	height: 20px;
+	/*background-color: #fff;*/
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	margin-left: -88px;
+}
+.circle i {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-color: rgba(255,255,255,0.4);
+	margin: 0 5px;
+	border-radius: 6px;
+	transition: all 0.4s;
+}
+.circle i:hover {
+	width: 20px;
+	background-color: #fff;
+}
