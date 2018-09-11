@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转的楚乔</title>
+	<style>
+		.box {
+			width: 240px;
+			height: 150px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			border: 1px solid #f10215;
+			background-color: #fff;
+			transition: all 1s;
+		}
+		.box:hover {
+			background-color: #f10215;
+			border-color: #fff;
+		}
+		.box img {
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 1s;
+			transform-origin: top right;
+		}
+		.box:hover img:first-child {
+			transform: rotate(60deg);
+		}
+		.box:hover img:nth-child(2) {
+			transform: rotate(120deg);
+		}
+		.box:hover img:nth-child(3) {
+			transform: rotate(180deg);
+		}
+		.box:hover img:nth-child(4) {
+			transform: rotate(240deg);
+		}
+		.box:hover img:nth-child(5) {
+			transform: rotate(300deg);
+		}
+		.box:hover img:last-child {
+			transform: rotate(360deg);
+		}
+
+		.box-skew {
+			margin: auto;
+			width: 200px;
+			height: 200px;
+			background-color: greenyellow;
+			/*transform: skew(30deg);*/
+			transition: all 0.6s;
+		}
+		.box-skew:hover {
+			box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+			transform: translateY(-10px);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="images/6.jpg" alt="">
+		<img src="images/5.jpg" alt="">
+		<img src="images/4.jpg" alt="">
+		<img src="images/3.jpg" alt="">
+		<img src="images/2.jpg" alt="">
+		<img src="images/1.jpg" alt="">
+	</div>
+
+
+	<div class="box-skew"></div>
+</body>
+</html>

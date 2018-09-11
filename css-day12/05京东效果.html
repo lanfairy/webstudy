@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东效果</title>
+	<style>
+		.box {
+			width: 183px;
+			height: 130px;
+			overflow: hidden;
+		}
+		.box img {
+			width: 193px;
+			height: auto;
+			transition: all 0.4s;
+		}
+		.box img:hover {
+			margin-left: -10px;
+		}
+
+		.box-scale {
+			margin-top: 20px;
+			width: 386px;
+			height: 260px;
+			overflow: hidden;
+			
+		}
+		.box-scale img {
+			transition: all 1s;
+		}
+		.box-scale:hover img{
+			transform: scale(1.1);
+		}
+		img {
+			transition: all 1s;
+			/*transform-origin: top left;*/
+		}
+		img:hover {
+			transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="box"><img src="1.jpg" alt=""></div>
+	<div class="box-scale"><img src="1.jpg" alt=""></div>
+	<img src="images/fengche.png" alt="" class="fengche">
+</body>
+</html>

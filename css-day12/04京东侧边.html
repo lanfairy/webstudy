@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东侧边</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		li {
+			list-style: none;
+		}
+		.subnav {
+			margin: 100px auto 0;
+			width: 20px;
+			/*background-color: green;*/
+		}
+		.subnav li {
+			width: 20px;
+			height: 20px;
+			margin: 3px 0;
+			background-color: pink;
+			position: relative;
+		}
+		.subnav div {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 20px;
+			width: 0;
+			background-color: skyblue;
+			transition: all 1s;
+			z-index: -1;
+		}
+		.subnav li:hover div {
+			width: 100px;
+		}
+		.transform {
+			margin: 0px auto;
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			transition: all 1s;
+		}
+		.transform:hover {
+			transform: translate(100px,100px);
+		}
+		.center {
+			width: 100px;
+			height: 100px;
+			background-color: greenyellow;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+	</style>
+</head>
+<body>
+	<div class="subnav">
+		<ul>
+			<li>
+				<div></div>
+			</li>
+			<li>
+				<div></div>
+			</li>
+			<li>
+				<div></div>
+			</li>
+			<li>
+				<div></div>
+			</li>
+			<li>
+				<div></div>
+			</li>
+			<li>
+				<div></div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="transform">变形之位移</div>
+	<div class="center">让定位的盒子水平居中垂直居中</div>
+</body>
+</html>

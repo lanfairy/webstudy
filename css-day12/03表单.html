@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<legend>学生档案</legend>
+			<label for="userName">姓名:</label>
+			<input type="text" name="userName" id="userName" placeholder="请输入用户名"><br>
+			<label for="userPhone">手机号码:</label>
+			<input type="tel" name="userPhone" id="userPhone" pattern="^1\d{10}&"><br>
+			<label for="email">邮箱地址:</label>
+			<input type="email" required name="email" id="email"><br>
+			<label for="collage">所属学院</label>
+			<input type="text" name="collage" id="collage" list="cList" placeholder="请选择"><br>
+			<datalist id="cList">
+				<option value="前端与移动开发学院"></option>
+				<option value="java学院"></option>
+				<option value="C++学院"></option>
+				<option value="iOS开发学院"></option>
+				<option value="Android开发学院"></option>
+				<option value="UI设计学院"></option>
+			</datalist><br>
+			<label for="score">入学成绩</label>
+			<input type="number" name="score" id="score" max="100" min="0" value="0"><br>
+		</fieldset>
+	</form>
+	<form action="">
+		<fieldset>
+			<legend>学生档案思密达</legend>
+			<label>姓名: <input type="text" placeholder="请输入学生名字"></label><br><br>
+			<label>手机号: <input type="tel"></label><br><br>
+			<label>邮箱: <input type="email"></label><br><br>
+		</fieldset>
+	</form>
+	<form action="">
+		<label>姓名: <input type="text" placeholder="请输入学生名字"></label><br><br>
+		<label>手机号: <input type="tel"></label><br><br>
+		<label>邮箱: <input type="email"></label><br><br>
+	</form>
+</body>
+</html>
