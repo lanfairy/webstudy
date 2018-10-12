@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两旋转的盒子</title>
+	<style>
+		div {
+			width: 224px;
+			height: 224px;
+		}
+		div img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 2s;
+		}
+		div:hover img {
+			transform: rotateY(180deg);
+		}
+		div img:nth-child(2) {
+			backface-visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="images/hou.svg" alt="">
+		<img src="images/qian.svg" alt="">
+	</div>
+</body>
+</html>
